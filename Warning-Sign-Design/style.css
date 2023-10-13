@@ -1,0 +1,94 @@
+body {
+  /* margin: 200px 200px; */
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  /* background-attachment: fixed; */
+  /* padding: 5px 30px; */
+}
+
+.flex-container {
+  /* background-color: #f1f1f1; */
+  /* margin: 10px; */
+  /* display: flex; */
+  /* padding: 20px; */
+  font-size: 20px;
+}
+
+.first-word {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgb(255, 255, 0);
+  padding: 20px;
+  max-width: 100px;
+  border-radius: 5px;
+  /* line-height: 0.7; */
+}
+
+.second-word {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgb(6, 6, 153);
+  padding: 20px 15px;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  padding: 12px 22px;
+  border: 2px solid green;
+  color: black;
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: red;
+  color: white;
+}
+
+.describe-item {
+  font-size: 25px;
+}
+
+.promo {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 20px;
+  max-width: 45px;
+}
+
+.line {
+  background-color: gray;
+  /* padding: 20px 30px; */
+  max-width: fit-content;
+}
+
+.price {
+  color: green;
+}
+
+/* Default styles for larger screens */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Styles for medium screens */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Styles for small screens */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
