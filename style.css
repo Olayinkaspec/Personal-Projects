@@ -1,0 +1,58 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 420px;
+      }
+
+      .text {
+        line-height: 1.785em;
+        text-align: center;
+      }
+
+      .some-text {
+        text-align: center;
+        line-height: 1.785em;
+      }
+
+      .card img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 0px;
+      }
+
+      .code {
+        background-color: rgb(245, 255, 255);
+        width: 95%;
+        text-align: center;
+        line-height: 1.8em;
+        padding: 22px 10px;
+      }
+
+      .info {
+        line-height: 1.7em;
+      }
+      span {
+        color: rgb(128, 128, 128);
+      }
+
+      .for-font-weight {
+        font-weight: bold;
+        font-size: large;
+        font-stretch: ultra-expanded;
+        color: rgb(36, 36, 109);
+      }
