@@ -1,15 +1,78 @@
-.animate {
-    color: blueviolet;
-    /* height: 100px; */
-    /* width: 100px; */
-    position: relative;
-    animation: slide-left 5s linear 2s ease-in-out backwards;
+body {
+margin: 0;
+padding: 0;
 }
 
-@keyframes slide-left {
+.transit {
+    /* outline-color: rgb(0, 236, 0); */
+    /* outline-style: dashed; */
+    /* border: 2px solid rgb(255, 245, 0); */
+    color: rgb(0, 2, 255);
+    text-shadow:2px 2px rgb(255, 0, 0) ;
+    padding-left: 10px;
+    text-align: center;
+    /* max-width: 3%; */
+    /* position: relative; */
+    /* animation: slide-left 5s linear 2s ease-in-out backwards; */
+}
+
+.step-one {
+color: rgb(255, 255, 255);
+text-shadow:2px 2px rgb(204, 30, 204) ;
+/* padding-left: 10px; */
+text-align: center;
+}
+
+.step-two {
+    color: rgb(0, 255, 0);
+    /* text-shadow:2px 2px rgb(0, 255, 101); */
+    /* padding-left: 10px; */
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    /* transition: width 5s; */
+    }
+
+    .step-three {
+        color: rgb(255, 255, 255);
+        text-shadow:2px 2px rgb(217, 225, 59);
+        text-align: center;
+    }
+
+    .step-four {
+        color: rgb(255, 255, 255);
+        text-shadow:2px 3px rgb(182, 105, 17);
+        text-align: center;
+    }
+
+    .step-five {
+    color: rgb(138, 43, 226);
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    /* transition: width 5s; */
+    }
+
+    .almost-there {
+        color: rgb(255, 255, 255);
+        text-shadow:2px 3px rgb(87, 164, 164);
+        text-align: center;
+    }
+
+    .end {
+    color: rgba(13, 2, 22, 0.77);
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: x-large;
+    text-align: center;
+    }
+/* @keyframes slide-left {
     0%   {background-color:red; left:5px; top: 5px;}
     25%  {background-color:yellow; left:200px; top:0px;}
     50%  {background-color:blue; left:200px; top:200px;}
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
-  }
+  } */
