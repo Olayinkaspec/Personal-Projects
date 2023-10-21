@@ -136,3 +136,9 @@ span {
     font-size: small;
     font-weight: lighter;
 }
+
+@media only screen and (max-width: 1440px) {
+    body {
+      background-color: lightblue;
+    }
+  }
