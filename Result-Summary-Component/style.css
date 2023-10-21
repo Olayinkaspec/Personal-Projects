@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    /* Aligns the children items in a row direction */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 93%);
+}
+
+.child1 {
+    width: 240px;
+    height: 300px;
+    background-color: hsl(241, 81%, 54%);
+    border-radius: 10px;
+    padding: 25px 25px;
+}
+
+.child2 {
+    background-color: hsl(0, 100%, 100%);
+    width: 240px;
+    height: 300px;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+
+.text {
+    text-align: center;
+    color: hsl(0, 100%, 100%);
+    padding-bottom: 20px;
+}
+
+.texts {
+    text-align: center;
+    font-weight: bold;
+    color: hsl(0, 100%, 100%);
+}
+
+.numbers {
+    text-align: center;
+    color: hsl(0, 100%, 100%);
+}
+
+.some-text {
+    text-align: center;
+    font-size: 14px;
+    color: hsl(0, 100%, 100%);
+    padding: 10px;
+}
+
+.text2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.first-line {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 73%, 78%, 0.859);
+    margin-bottom: 7px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.second-line {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 85%);
+    margin-bottom: 7px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.third-line {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 87%);
+    margin-bottom: 7px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.fourth-line {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 39%, 85%);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.figures {
+    font-size: small;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+}
+
+.shape {
+    background-color:hsla(256, 72%, 46%, 1);
+    border: 1px solid hsla(241, 72%, 46%, 0);    
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+input[type=submit] {
+    background-color: hsl(224, 30%, 27%);
+    display: block;
+    width: 240px;
+    font-size: small;
+    padding: 10px 20px;
+    text-align: center;
+  border: none;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  box-shadow: 5px 5px 5px hsl(0, 0%, 93%);
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+span {
+    font-size: small;
+    font-weight: lighter;
+}
