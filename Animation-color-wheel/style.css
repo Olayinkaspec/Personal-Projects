@@ -74,6 +74,7 @@
     top: 7%;
   }
   
+  /* defines end and start position of the transition */
   @keyframes wheel {
      0% {
        transform: rotate(0deg);
@@ -91,7 +92,7 @@
       background-color: blue;
     }
     50% {
-      background-color: purple;
+      background-color: rgb(13, 128, 0);
     }
     75% {
       background-color: blue;
