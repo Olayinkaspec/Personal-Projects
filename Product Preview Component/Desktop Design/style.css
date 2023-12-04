@@ -1,30 +1,102 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Montserrat:wght@500;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
 body {
-    margin: 0;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: hsl(30, 38%, 92%);
-    padding-top: 50px;
-    overflow: -moz-hidden-unscrollable;
-}
-.container {
+    font-size: 0.9rem;
+    min-height: 100vh;
     display: flex;
-    max-width: 1440px;
-    width: 100vw;
-    height: 100vh;
-    padding: 50px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 1.875em auto;
+    padding: 0 30px;
+}
+
+.grid {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    display: inherit;
 }
 
 .content {
-text-align: justify;
-justify-content: center;
-padding: 50px;
-border-radius: 0 10px 10px 0;
-width: 40%;
-background-color: hsl(0, 0%, 100%);
+padding: 35px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.prod-cat {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8125rem;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.prod-name{
+    font-family: 'Fraunces', serif;
+    font-size: 2.125rem;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
+
+.prod-desc {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+}
+
+.prod-price {
+    display: flex;
+    align-items: center;
+}
+
+.new_price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 1.5625rem;
+    padding-right: 25px;
+}
+
+.old_price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 0; 
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 23%);
 }
 
 .footer {
@@ -32,33 +104,58 @@ background-color: hsl(0, 0%, 100%);
     font-size: 0.875rem;
 }
 
-button {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(158, 36%, 37%);
-    text-align: center;
-    display: inline-block;
-    border: none;
-    font-size: 0.875rem;
-    text-decoration: none;
-    padding: 15px 32px;
-    margin: 4px 2px;
-    justify-content: space-around;
-    cursor: pointer;
-    border-radius: 10px;
+@media only screen and (max-width: 628px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container img {
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .prod-cat, .prod-name, .prod-desc, .prod-price {
+        padding-bottom: 1.4375em;
+    }
 }
 
-.p-name {
-    font-variant: small-caps;
-    color: hsl(228, 12%, 48%);
-}
+@media only screen and (max-width: 375px) {
+    .container {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
 
-.numbers {
-    color: hsl(158, 36%, 37%);
-    font-size: 1rem;
-    font-weight: bold;
-}
+    .image-container img {
+        max-height: 290px;
+    }
 
-header {
-    width: 50%;
-    text-align: justify;
+    .content {
+        padding: 24px;
+    }
+
+    .prod-cat, .prod-name, .prod-desc, .prod-price {
+        padding-bottom: 16px;
+    }
+
+    .prod-name {
+        font-size: 20px;
+    }
+
+    .prod-desc {
+        font-size: 12px;
+    }
+
+    .new_price {
+        font-size: 23px;
+    }
+
+    button {
+        padding: 12px 0;
+        font-size: 13px;
+    }
 }
