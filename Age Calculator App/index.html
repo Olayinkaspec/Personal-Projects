@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div class="inputs-wrap">
+                <input type="date" id="date-input">
+                <button onclick="ageCalculate()" id="submit-btn">
+                    <img src="images/icon-arrow.svg" alt="Calculator">
+                </button>
+            </div>
+            <div class="outputs-wrap">
+                <div id="output">
+                    <span id="years">
+                        --
+                    </span>
+                    <p>Years</p>
+                </div>
+                <div id="output">
+                    <span id="months">
+                        --
+                    </span>
+                    <p>Months</p>
+                </div>
+                <div id="output">
+                    <span id="days">
+                        --
+                    </span>
+                    <p>Days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
