@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Get in touch</h2>
+        <div id="error_info">
+
+        </div>
+            <form id="cform" onsubmit="return verify();">
+                <div class="input">
+                    <input type="text" placeholder="Name" id="name">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Subject" id="subject">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Phone Number" id="phone">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="input">
+                    <textarea id="message" placeholder="Start typing.."></textarea>
+                </div>
+                <div class="submit-btn">
+                    <input type="submit">
+                </div>
+            </form>
+    </div>
+<script src="main.js"></script>    
+</body>
+</html>

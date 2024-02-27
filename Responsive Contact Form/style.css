@@ -1,0 +1,81 @@
+:root {
+    --Red: hsl(358, 98%, 77%);
+    --Dark-lace-green: hsl(180, 25%, 25%);
+    --Off-white: hsl(0, 0%, 80%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Pale-purple: hsl(263, 100%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(patterned\ background.jpg);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: var(--White);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 4px 2px var(--Off-white);
+}
+
+.container h2 {
+    color: var(--Dark-lace-green);
+    margin-bottom: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.container .input {
+    margin-bottom: 10px;
+}
+
+.container 
+    .input
+    input[type="text"], 
+.container textarea { 
+    border: 1px solid var(--Smokey-grey); 
+    width: 100%; 
+    padding: 10px; 
+}
+
+.container textarea {
+    resize: none;
+    height: 85px;
+}
+  .container .submit-btn input[type="submit"] {
+    background-color: var(--Pale-purple);
+    color: var(--Dark-lace-green);
+    text-align: center;
+    margin-top: 14px;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+#error_info {
+    margin-bottom: 20px;
+    background: var(--Red);
+    padding: 0px;
+    text-align: center;
+    font-size: 0.875rem;
+    transition: all 0.5s ease;
+}
